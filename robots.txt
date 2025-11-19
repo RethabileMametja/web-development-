@@ -1,0 +1,11 @@
+# robots.txt for Green Earth Community Garden
+# This file is used to instruct search engine crawlers on which pages to index.
+
+User-agent: *
+Allow: /
+
+# Disallow any pages that are not meant for public consumption, e.g., admin or login pages.
+# Disallow: /admin/
+# Disallow: /login/
+
+Sitemap: /sitemap.xml

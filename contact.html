@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - General Enquiries and Location | Green Earth Community Garden</title>
+    <meta name="description" content="Get in touch with Green Earth Community Garden for general enquiries. Find our location, contact details, and send us a message directly.">
+    <meta name="keywords" content="Contact Form, Location, Address, Phone Number, Email, General Enquiry, Melbourne">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Vertical Navigation Sidebar -->
+    <nav>
+        <div>
+            <h1>🌱 Green Earth<br>Community Garden</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="about.html">📖 Our Story</a></li>
+            <li><a href="services.html">🛠️ What We Offer</a></li>
+            <li><a href="events.html">📅 Upcoming Events</a></li>
+            <li><a href="enquiry.html">🤝 Enquiry</a></li>
+            <li><a href="contact.html" class="active">📞 Contact</a></li>
+        </ul>
+        <div>
+            <p>📍 123 Green Street<br>Melbourne VIC 3000<br>📧 info@greenearthgarden.org<br>📞 (03) 1234 5678</p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div>
+                <h1>Contact Us</h1>
+                <h2>We're Here to Help You Connect with Nature</h2>
+                <p>We'd love to hear from you! Whether you have questions about membership, want to visit our garden, or need gardening advice, we're here to help.</p>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="animate-in">
+            <div>
+                <h2>Contact Information</h2>
+                <h3 class="sr-only">Our Contact Details</h3>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div>📍</div>
+                        <h3>Visit Us</h3>
+                        <p>
+                            <strong>123 Green Street</strong><br>
+                            Melbourne VIC 3000<br>
+                            Australia
+                        </p>
+                        <p>
+                            Located near Melbourne Central Station<br>
+                            Wheelchair accessible entrance
+                        </p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div>📧</div>
+                        <h3>Email Us</h3>
+                        <p>
+                            <strong>info@greenearthgarden.org</strong><br>
+                            General inquiries & membership
+                        </p>
+                        <p>
+                            <strong>events@greenearthgarden.org</strong><br>
+                            Workshop bookings & events
+                        </p>
+                        <p>
+                            We aim to respond within 24 hours
+                        </p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div>📞</div>
+                        <h3>Call Us</h3>
+                        <p>
+                            <strong>(03) 1234 5678</strong><br>
+                            Main office line
+                        </p>
+                        <p>
+                            <strong>Monday-Friday:</strong> 9:00 AM - 5:00 PM<br>
+                            <strong>Saturday:</strong> 9:00 AM - 2:00 PM<br>
+                            <strong>Sunday:</strong> Closed
+                        </p>
+                        <p>
+                            Leave a voicemail after hours
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section>
+            <div>
+                <div>
+                    <div>
+                        <h2>Send Us a Message</h2>
+                <h3 class="sr-only">Contact Form</h3>
+                        <p>Have a question about our garden, membership, or upcoming events? Fill out the form and we'll get back to you as soon as possible.</p>
+                        
+                        <div>
+                            <h4>Quick Response Topics</h4>
+                            <ul>
+                                <li>Membership applications and plot availability</li>
+                                <li>Workshop schedules and registration</li>
+                                <li>Garden rules and community guidelines</li>
+                                <li>Volunteer opportunities</li>
+                                <li>School and group visits</li>
+                                <li>Partnership and collaboration inquiries</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4>💡 Pro Tip</h4>
+                            <p>For faster responses, include your contact details and be specific about what you're looking for. If you're interested in membership, let us know your preferred start date!</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" pattern="[0-9]{10}" title="Phone number must be 10 digits">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Type of Message *</label>
+                                <select id="subject" name="subject" required class="form-input">
+                                    <option value="">Select a topic...</option>
+                                    <option value="membership">Garden Plot Membership</option>
+                                    <option value="workshops">Educational Workshops</option>
+                                    <option value="youth">Youth Programs</option>
+                                    <option value="volunteer">Volunteering Opportunities</option>
+                                    <option value="events">Events & Activities</option>
+                                    <option value="visit">Garden Visit/Tour</option>
+                                    <option value="partnership">Partnership/Collaboration</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" required class="form-input" rows="5" placeholder="Please provide details about your inquiry..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label for="newsletter">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    I'd like to receive updates about garden events and workshops
+                                </label>
+                            </div>
+                            
+                            <div id="formError" class="error-message"></div>
+                            <div id="formSuccess" class="success-message"></div>
+                            
+                            <button type="submit" class="contact-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Garden Hours & Access Section -->
+        <section>
+            <div>
+                <h2>Garden Hours & Access</h2>
+                <h3 class="sr-only">Opening Times and Directions</h3>
+                
+                <div>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <ul>
+                            <li><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</li>
+                            <li><strong>Saturday:</strong> 9:00 AM - 2:00 PM (Community Access)</li>
+                            <li><strong>Sunday:</strong> Closed</li>
+                            <li><strong>Public Holidays:</strong> Closed</li>
+                        </ul>
+                        <p>* Plot holders have 24/7 access with their key fob.</p>
+                    </div>
+                    
+                    <div>
+                        <h3>How to Find Us</h3>
+                        <div class="map-container">
+                            <!-- Placeholder for Google Maps Embed -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509414!2d144.9630576153185!3d-37.8162796797515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b47414703b%3A0x5045675218ce7e0!2sMelbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1645000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <p>Nearest Public Transport: Tram Stop 12 (Green St/Main Rd)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/contact.js"></script>
+
+</body>
+</html>

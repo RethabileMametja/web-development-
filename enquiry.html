@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form - Volunteer, Sponsor, or General Questions | Green Earth Garden</title>
+    <meta name="description" content="Submit an enquiry to Green Earth Community Garden. Ask about volunteering, sponsorship opportunities, or general questions about our services and products.">
+    <meta name="keywords" content="Volunteer, Sponsor, Enquiry Form, Community Garden Contact, Partnership, Support">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Vertical Navigation Sidebar -->
+    <nav>
+        <div>
+            <h1>🌱 Green Earth<br>Community Garden</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="about.html">📖 Our Story</a></li>
+            <li><a href="services.html">🛠️ What We Offer</a></li>
+            <li><a href="events.html">📅 Upcoming Events</a></li>
+            <li><a href="enquiry.html">🤝 Enquiry</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+        </ul>
+        <div>
+            <p>📍 123 Green Street<br>Melbourne VIC 3000<br>📧 info@greenearthgarden.org<br>📞 (03) 1234 5678</p>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div>
+                <h1>Enquiry Form</h1>
+                <h2>Let Us Know How We Can Help You Grow</h2>
+                <p>Have a question about our services, products, or how you can get involved? Use the form below to send us your enquiry.</p>
+            </div>
+        </section>
+
+        <!-- Enquiry Form Section -->
+        <section class="animate-in">
+            <div>
+                <h2>Send Your Enquiry</h2>
+                <h3 class="sr-only">Enquiry Submission Form</h3>
+                <p>We will process your request and provide a response related to cost, availability, or other relevant aspects.</p>
+                
+                <form id="enquiryForm" action="#" method="POST">
+                    <div>
+                        <div>
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required class="form-input">
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required class="form-input">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" pattern="[0-9]{10}" title="Phone number must be 10 digits">
+                    </div>
+                    
+                    <div>
+                        <label for="enquiryType">Enquiry Type *</label>
+                        <select id="enquiryType" name="enquiryType" required class="form-input">
+                            <option value="">Select enquiry type...</option>
+                            <option value="service">Services (e.g., workshops, plot rental)</option>
+                            <option value="product">Products (e.g., compost, seeds)</option>
+                            <option value="volunteer">Volunteer Opportunities</option>
+                            <option value="sponsor">Sponsorship/Donation</option>
+                            <option value="general">General Question</option>
+                        </select>
+                    </div>
+                    
+                    <div id="dateField" style="display: none;">
+                        <label for="preferredDate">Preferred Start Date (for volunteering/sponsorship)</label>
+                        <input type="date" id="preferredDate" name="preferredDate" class="form-input">
+                    </div>
+                    
+                    <div>
+                        <label for="message">Your Enquiry * (Max 500 characters)</label>
+                        <textarea id="message" name="message" required class="form-input" rows="6" maxlength="500" placeholder="Please provide details about your enquiry..."></textarea>
+                        <small id="charCount">0/500 characters</small>
+                    </div>
+                    
+                    <div id="formError"></div>
+                    <div id="formSuccess"></div>
+                    
+                    <button type="submit" class="join-btn">Submit Enquiry</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section>
+            <div>
+                <h2>Frequently Asked Questions</h2>
+                <h3 class="sr-only">Common Questions About the Garden</h3>
+                
+                <div>
+                    <div>
+                        <h4>Do I need gardening experience?</h4>
+                        <p>Not at all! We welcome gardeners of all skill levels. Our experienced members and regular workshops will help you learn everything you need to know.</p>
+                    </div>
+                    
+                    <div>
+                        <h4>What if I travel frequently?</h4>
+                        <p>Community members can help care for your plot when you're away. We have a buddy system and plot-sharing arrangements for frequent travelers.</p>
+                    </div>
+                    
+                    <div>
+                        <h4>Are there any costs involved?</h4>
+                        <p>Membership is free! Plot holders pay a small annual fee to cover water and maintenance, but all other membership levels are completely free.</p>
+                    </div>
+                    
+                    <div>
+                        <h4>Can I bring my children?</h4>
+                        <p>Absolutely! We encourage families to join. We have a dedicated children's area and family-friendly events throughout the year.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
